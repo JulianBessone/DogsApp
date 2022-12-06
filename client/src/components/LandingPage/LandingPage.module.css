@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #FFF5E4;
+}
+.landingContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tittle_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tittle_container h1{
+    font-size: 60px;
+    color: #FF9494;
+}
+.tittle_container img{
+    width: 80px;
+    height: 80px;
+}
+.link{
+    text-decoration: none;
+}
+
+.button {
+    margin-top: 30px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    background:#FF9494;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+   }
+   
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+   
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+   
+button:hover .svg_wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+   
+button:hover svg {
+    transform: translateX(1.9em) rotate(45deg) scale(1.1);
+}
+   
+button:hover span {
+    transform: translateX(5em);
+}
+   
+button:active {
+    transform: scale(0.95);
+}
+   
+@keyframes fly-1 {
+    from {
+     transform: translateY(0.1em);
+    }
+   
+    to {
+     transform: translateY(-0.1em);
+    }
+}
+   
